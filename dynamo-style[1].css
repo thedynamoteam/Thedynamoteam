@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0056b3; /* Blue background */
+    padding: 15px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #003d82, #007bff);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form .btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form .btn:hover {
+    background: #0056b3;
+}
+
+/* Facebook Team Members Section */
+.team-contacts {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.fb-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.fb-btn:hover {
+    background: #0e5dcf;
+}
+
+/* Beautiful Email Section */
+.email-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.email-link {
+    display: inline-block;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.email-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #002d62;
+    color: white;
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
